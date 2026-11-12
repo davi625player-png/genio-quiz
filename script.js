@@ -53,7 +53,7 @@ function carregarConteudo() {
             const tipo = corretas[fase][0];
 
             if (tipo === "bt-numero") {
-                h2.innerHTML = 'Questão <button id="bt-numero" onclick="botaoEspecial()">' + (fase + 1) + "</button>";
+                h2.innerHTML = 'Questão <button id="bt-numero" onclick="botaoEspecial()" tabindex="-1">' + (fase + 1) + "</button>";
             } else if (tipo === "bt-inline") {
                 let palavra = "";
                 let contador = 0;
@@ -71,7 +71,7 @@ function carregarConteudo() {
                         const txt_anterior = txt.slice(0, i - palavra.length);
                         const txt_posterior = txt.slice(i);
 
-                        h4.innerHTML = txt_anterior + '<button id="bt-inline" onclick="botaoEspecial()">' + palavra + '</button>' + txt_posterior;
+                        h4.innerHTML = txt_anterior + '<button id="bt-inline" onclick="botaoEspecial()" tabindex="-1">' + palavra + '</button>' + txt_posterior;
                         break
                     } else {
                         palavra = "";

@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 button {
     background-color: rgb(228, 115, 34);
     border-color: rgb(158, 68, 4);
@@ -64,6 +68,21 @@ p {
     left: 40%;
 }
 
+#botao-instrucoes {
+    position: fixed;
+    bottom: 40%;
+    right: 40%;
+    left: 40%;
+}
+
+#botao-creditos {
+    position: fixed;
+    bottom: 20%;
+    right: 40%;
+    left: 40%;
+}
+
+
 #recomecar { 
     position: fixed;
     bottom: 20%;
@@ -112,4 +131,5 @@ p {
 
     width: auto;
 }
+
 
